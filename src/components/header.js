@@ -16,8 +16,6 @@ const Header = () => {
   ]
 
   const title = titleData.find(t => t.path === location.pathname)
-  console.log(title)
-
   return (
     <header className="w-full bg-white flex items-center justify-center sticky top-0 right-0 ">
       <div className="max-w-[500px] p-4 flex justify-between items-center w-full">
@@ -26,7 +24,7 @@ const Header = () => {
             <FiPlus className="text-2xl text-white" />
           </div>
         </Link> : <div className="w-[35px] h-[35px]"></div>}
-        <h1 className="select-none">{title.name}</h1>
+        <h1 className="select-none">{title === undefined ? "user" : title.name}</h1>
         {isHome ?
           <Link to="/info">
             <div className="p-1.5">

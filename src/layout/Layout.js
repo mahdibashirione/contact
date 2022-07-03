@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import SearchBar from "../components/SearchBar";
 import { useLocation } from "react-router-dom";
+import UserContext from "../context/userContext";
 
 const Layout = ({ children }) => {
 
@@ -9,11 +10,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header />
-      {isHome && <SearchBar />}
-      <main>
-        {children}
-      </main>
+      <UserContext>
+        <Header />
+        {isHome && <SearchBar />}
+        <main>
+          {children}
+        </main>
+      </UserContext>
     </>
   );
 }
