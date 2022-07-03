@@ -7,12 +7,7 @@ const UserContext = ({ children }) => {
 
   const [user, setUser] = useState([
     { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "325" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "765" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "956" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "895" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "456" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "875" },
-    { firstName: "mahdi", lastName: "bashiri", numberPhone: "09302294140", id: "125" },
+    { firstName: "ali", lastName: "momi", numberPhone: "09305684141", id: "325" },
   ])
 
   return (
