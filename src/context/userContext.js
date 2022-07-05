@@ -43,6 +43,9 @@ export const useUserActions = () => {
     const filterContact = userState.filter(c => c.id !== id)
     setUser(filterContact)
     navigate("/")
+    if (userState.length >= 1) {
+      localStorage.clear("dataContact")
+    }
   }
   return { setUser, deleteContactHandler }
 }
